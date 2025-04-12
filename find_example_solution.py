@@ -58,9 +58,7 @@ def print_solution(solution):
     for var, value in solution.items():
         if value:
             true_literals.append(var)
-            false_literals.append(-var)
         else:
-            true_literals.append(-var)
             false_literals.append(var)
 
     print("\nTrue literals:", sorted(true_literals))
