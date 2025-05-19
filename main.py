@@ -41,7 +41,8 @@ def create_implication_graph(num_vars, clauses):
     # The graph has 2*num_vars nodes: for each variable i,
     # node 2*i represents i and node 2*i+1 represents -i
     n = 2 * num_vars
-    graph = [[0 for _ in range(n)] for _ in range(n)]
+    # ten graf nie jest dobrze bo to jest tablica kwadratowa
+    graph = [[] for _ in range(n)]
 
     # Convert literal to node index
     def literal_to_node(literal):
@@ -57,10 +58,10 @@ def create_implication_graph(num_vars, clauses):
         not_b = -b
 
         # Add edge -a => b
-        graph[literal_to_node(not_a)][literal_to_node(b)] = 1
+        graph[literal_to_node(not_a)].append(literal_to_node(b))
 
         # Add edge -b => a
-        graph[literal_to_node(not_b)][literal_to_node(a)] = 1
+        graph[literal_to_node(not_b)].append(literal_to_node(a))
 
     return graph
 
@@ -89,10 +90,10 @@ def main():
 
     # Create implication graph
     graph = create_implication_graph(num_vars, clauses)
-
+    #print(graph)
     # Find strongly connected components
     sccs = tarjan_scc(graph)
-
+    #print(sccs)
     # Check satisfiability
     is_satisfiable = check_satisfiability(num_vars, sccs)
 
@@ -101,6 +102,7 @@ def main():
         print("The formula is satisfiable.")
 
         sorted_scc_indices = topological_sort_sccs(graph, sccs)
+        #print(sorted_scc_indices)
 
         # Find an example solution
         solution = find_example_solution(sccs, sorted_scc_indices, num_vars)
