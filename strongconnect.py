@@ -15,13 +15,13 @@ def tarjan_scc(adj_matrix):
         stack.append(v)
         on_stack[v] = True
 
-        for w in range(n):
-            if adj_matrix[v][w]:  # There is an edge from v to w
-                if indices[w] == -1:
-                    strongconnect(w)
-                    lowlink[v] = min(lowlink[v], lowlink[w])
-                elif on_stack[w]:
-                    lowlink[v] = min(lowlink[v], indices[w])
+        for w in adj_matrix[v]:
+          # There is an edge from v to w
+            if indices[w] == -1:
+                strongconnect(w)
+                lowlink[v] = min(lowlink[v], lowlink[w])
+            elif on_stack[w]:
+                lowlink[v] = min(lowlink[v], indices[w])
 
         if lowlink[v] == indices[v]:
             scc = []

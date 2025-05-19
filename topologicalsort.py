@@ -20,18 +20,21 @@ def create_condensed_graph(adj_matrix, sccs):
             scc_mapping[vertex] = i
 
     # Create the condensed adjacency matrix
-    condensed_adj_matrix = [[0 for _ in range(num_sccs)] for _ in range(num_sccs)]
+    condensed_adj_matrix1 =[[] for _ in range(num_sccs)]
+    #condensed_adj_matrix = [[0 for _ in range(num_sccs)] for _ in range(num_sccs)]
 
     # For each edge in the original graph, add an edge in the condensed graph if it connects different SCCs
     for u in range(n):
-        for v in range(n):
-            if adj_matrix[u][v] == 1:
-                scc_u = scc_mapping[u]
-                scc_v = scc_mapping[v]
-                if scc_u != scc_v:  # Only add edges between different SCCs
-                    condensed_adj_matrix[scc_u][scc_v] = 1
+        for v in adj_matrix[u]:
+        #for v in range(n):
+            #if adj_matrix[u][v] == 1:
+            scc_u = scc_mapping[u]
+            scc_v = scc_mapping[v]
+            if scc_u != scc_v:  # Only add edges between different SCCs
+                condensed_adj_matrix1[scc_u].append(scc_v)
+                #condensed_adj_matrix[scc_u][scc_v] = 1
 
-    return condensed_adj_matrix, scc_mapping
+    return condensed_adj_matrix1, scc_mapping
 
 
 def kahn_topological_sort(adj_matrix):
@@ -49,9 +52,13 @@ def kahn_topological_sort(adj_matrix):
     # Calculate in-degree for each vertex
     in_degree = [0] * n
     for i in range(n):
-        for j in range(n):
-            if adj_matrix[j][i] == 1:
-                in_degree[i] += 1
+        for j in adj_matrix[i]:
+            in_degree[j] += 1
+
+    #for i in range(n):
+     #   for j in range(n):
+     #       if adj_matrix[j][i] == 1:
+      #          in_degree[i] += 1
 
     # Initialize queue with vertices that have no incoming edges
     queue = []
@@ -66,11 +73,15 @@ def kahn_topological_sort(adj_matrix):
         sorted_vertices.append(u)
 
         # Decrease in-degree of adjacent vertices
-        for v in range(n):
-            if adj_matrix[u][v] == 1:
-                in_degree[v] -= 1
-                if in_degree[v] == 0:
+        for v in adj_matrix[u]:
+            in_degree[v] -= 1
+            if in_degree[v] == 0:
                     queue.append(v)
+        #for v in range(n):
+            #if adj_matrix[u][v] == 1:
+                #in_degree[v] -= 1
+                #if in_degree[v] == 0:
+                    #queue.append(v)
 
     # Check if there's a cycle
     if len(sorted_vertices) != n:
