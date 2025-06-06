@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="720b7fd4-21b5-46eb-881a-2aac224b1dca" name="Changes" comment="added file generator">
-      <change afterPath="$PROJECT_DIR$/performanceTests.py" afterDir="false" />
+    <list default="true" id="720b7fd4-21b5-46eb-881a-2aac224b1dca" name="Changes" comment="added testing">
+      <change afterPath="$PROJECT_DIR$/graphing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exampleinput" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,48 +25,55 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "MateuszSudejko"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MateuszSudejko&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/MateuszSudejko/2SATsolver.git",
-    "accountId": "070df316-5bf6-409a-87ce-4524a1d0e827"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MateuszSudejko/2SATsolver.git&quot;,
+    &quot;accountId&quot;: &quot;070df316-5bf6-409a-87ce-4524a1d0e827&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2vdRUiLj477Hw1FhHcON9pKuTfI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Python.example_files_generator.executor": "Run",
-    "Python.find-example-solution.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.performanceTests.executor": "Run",
-    "Python.strongconnect.executor": "Run",
-    "Python.topologicalsort.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Python.example_files_generator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.find-example-solution.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.performanceTests.executor&quot;: &quot;Run&quot;,
+    &quot;Python.strongconnect.executor&quot;: &quot;Run&quot;,
+    &quot;Python.topologicalsort.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/matsu/PycharmProjects/2SATsolver&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Python.performanceTests">
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\matsu\PycharmProjects\2SATsolver\test_results" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
     <configuration name="example_files_generator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="2SATsolver" />
       <option name="ENV_FILES" value="" />
@@ -182,8 +191,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.performanceTests" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.performanceTests" />
         <item itemvalue="Python.example_files_generator" />
         <item itemvalue="Python.find_example_solution" />
         <item itemvalue="Python.topologicalsort" />
@@ -206,7 +215,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1744472981716</updated>
-      <workItem from="1744472982855" duration="6425000" />
+      <workItem from="1744472982855" duration="7057000" />
+      <workItem from="1746118869493" duration="1326000" />
+      <workItem from="1746202906017" duration="1020000" />
+      <workItem from="1746900787575" duration="362000" />
+      <workItem from="1747073129418" duration="657000" />
+      <workItem from="1747593815934" duration="2776000" />
+      <workItem from="1747686523326" duration="3650000" />
+      <workItem from="1747852753954" duration="14000" />
+      <workItem from="1747855911606" duration="683000" />
+      <workItem from="1747936519374" duration="11431000" />
+      <workItem from="1748013907392" duration="7835000" />
+      <workItem from="1748371497851" duration="17000" />
+      <workItem from="1749231872253" duration="888000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -232,7 +253,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744479517631</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added testing">
+      <option name="closed" value="true" />
+      <created>1744484210370</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1744484210370</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,14 +270,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="added file generator" />
-    <option name="LAST_COMMIT_MESSAGE" value="added file generator" />
+    <MESSAGE value="added testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="added testing" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/2SATsolver$main.coverage" NAME="main Coverage Results" MODIFIED="1744479492983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/2SATsolver$main.coverage" NAME="main Coverage Results" MODIFIED="1749232515611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/2SATsolver$topologicalsort.coverage" NAME="topologicalsort Coverage Results" MODIFIED="1744475963355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/2SATsolver$performanceTests.coverage" NAME="performanceTests Coverage Results" MODIFIED="1744481457814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/2SATsolver$performanceTests.coverage" NAME="performanceTests Coverage Results" MODIFIED="1748023924623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/2SATsolver$strongconnect.coverage" NAME="strongconnect Coverage Results" MODIFIED="1744474410548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/2SATsolver$find_example_solution.coverage" NAME="find-example-solution Coverage Results" MODIFIED="1744477055599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/2SATsolver$example_files_generator.coverage" NAME="example_files_generator Coverage Results" MODIFIED="1744479408002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/2SATsolver$example_files_generator.coverage" NAME="example_files_generator Coverage Results" MODIFIED="1747594045977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

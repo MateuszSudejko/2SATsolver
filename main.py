@@ -1,3 +1,5 @@
+import os
+
 from strongconnect import tarjan_scc
 from find_example_solution import find_example_solution, print_solution
 from topologicalsort import topological_sort_sccs
@@ -9,14 +11,14 @@ def parse_input():
     print("2. From file")
 
     choice = input("Enter your choice (1 or 2): ")
-
+    file_path = None
     if choice == '1':
         print("Enter the number of variables:")
         num_vars = int(input())
         print("Enter the clauses separated by semicolons (e.g., '1 -2;-1 2;-1 -2;1 -3'):")
         clauses_str = input()
     elif choice == '2':
-        file_path = input("Enter the path to the input file: ")
+        file_path = input("Enter the absolute path to the input file: ")
         with open(file_path, 'r') as file:
             num_vars = int(file.readline().strip())
             clauses_str = file.readline().strip()
@@ -33,7 +35,7 @@ def parse_input():
         literals = list(map(int, clause_str.split()))
         clauses.append(literals)
 
-    return num_vars, clauses
+    return num_vars, clauses, file_path
 
 
 def create_implication_graph(num_vars, clauses):
@@ -84,9 +86,15 @@ def check_satisfiability(num_vars, sccs):
     return True
 
 
+def save_result_to_file(file_path, output):
+    file_name = os.path.basename(file_path).split('.')[0] + "-result.txt"
+    with open(file_name, 'w') as file:
+        file.write(output)
+
+
 def main():
     # Parse input
-    num_vars, clauses = parse_input()
+    num_vars, clauses, file_path = parse_input()
 
     # Create implication graph
     graph = create_implication_graph(num_vars, clauses)
@@ -100,17 +108,22 @@ def main():
     # Output result
     if is_satisfiable:
         print("The formula is satisfiable.")
-
+        output = "The formula is satisfiable.\n"
         sorted_scc_indices = topological_sort_sccs(graph, sccs)
         #print(sorted_scc_indices)
 
         # Find an example solution
         solution = find_example_solution(sccs, sorted_scc_indices, num_vars)
-
+        output += str(solution)
         # Print the solution
         print_solution(solution)
     else:
         print("The formula is unsatisfiable.")
+        output = "The formula is unsatisfiable.\n"
+    if file_path:
+        save_result_to_file(file_path, output)
+
+    input("Press anything to exit...")
 
 
 if __name__ == "__main__":
