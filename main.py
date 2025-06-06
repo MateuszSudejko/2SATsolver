@@ -120,10 +120,13 @@ def main():
     else:
         print("The formula is unsatisfiable.")
         output = "The formula is unsatisfiable.\n"
+
     if file_path:
         save_result_to_file(file_path, output)
 
-    input("Press anything to exit...")
+    input("Press Enter to exit...")
+
+
 
 
 if __name__ == "__main__":

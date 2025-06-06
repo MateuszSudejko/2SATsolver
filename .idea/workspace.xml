@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="720b7fd4-21b5-46eb-881a-2aac224b1dca" name="Changes" comment="added testing">
-      <change afterPath="$PROJECT_DIR$/graphing.py" afterDir="false" />
+    <list default="true" id="720b7fd4-21b5-46eb-881a-2aac224b1dca" name="Changes" comment="added saving results automatically to a file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exampleinput" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -227,7 +225,7 @@
       <workItem from="1747936519374" duration="11431000" />
       <workItem from="1748013907392" duration="7835000" />
       <workItem from="1748371497851" duration="17000" />
-      <workItem from="1749231872253" duration="888000" />
+      <workItem from="1749231872253" duration="1273000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -261,7 +259,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744484210370</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added saving results automatically to a file">
+      <option name="closed" value="true" />
+      <created>1749232783002</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749232783002</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,10 +277,11 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="added file generator" />
     <MESSAGE value="added testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="added testing" />
+    <MESSAGE value="added saving results automatically to a file" />
+    <option name="LAST_COMMIT_MESSAGE" value="added saving results automatically to a file" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/2SATsolver$main.coverage" NAME="main Coverage Results" MODIFIED="1749232515611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/2SATsolver$main.coverage" NAME="main Coverage Results" MODIFIED="1749232785544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/2SATsolver$topologicalsort.coverage" NAME="topologicalsort Coverage Results" MODIFIED="1744475963355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/2SATsolver$performanceTests.coverage" NAME="performanceTests Coverage Results" MODIFIED="1748023924623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/2SATsolver$strongconnect.coverage" NAME="strongconnect Coverage Results" MODIFIED="1744474410548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
