@@ -90,6 +90,7 @@ def save_result_to_file(file_path, output):
     file_name = os.path.basename(file_path).split('.')[0] + "-result.txt"
     with open(file_name, 'w') as file:
         file.write(output)
+        print(f"The results have been saved to {file_name}.")
 
 
 def main():
@@ -125,8 +126,6 @@ def main():
         save_result_to_file(file_path, output)
 
     input("Press Enter to exit...")
-
-
 
 
 if __name__ == "__main__":
